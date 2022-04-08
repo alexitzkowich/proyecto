@@ -1,7 +1,7 @@
 /* Imports - Tipografía */
-@font-face { 
-    font-family: "";  
-    src: url(""), format("woff"); 
+@font-face {
+    font-family: "AkzidenzGrotesk";
+    src: url("https: //res.cloudinary.com/dxhqrq4hc/raw/upload/v1649443896/AkzidenzGrotesk-Bold_a2qjyz.woff"), format("woff");
 }
 /* Reset */
 *,
@@ -59,7 +59,7 @@ picture {
   --black: #000000;
   --white: #ffffff;
   /* 2. Tipografía */
-  --font-sans: 'Inter var', sans-serif;
+  --font-sans: 'AkzidenzGrotesk';
   --font-size-1: 1rem;
   --font-size-2: 1.1rem;
   --font-size-3: 1.25rem;

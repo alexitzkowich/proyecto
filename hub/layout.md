@@ -1,4 +1,6 @@
 Inspiración de layout:
 
-https://ndo.dev
-https://www.miriamsuzanne.com
+https://obeygiant.com/
+https://fragment-forum.com/#about
+http://www.popaganda.com/
+http://www.idea-mag.com/column/
