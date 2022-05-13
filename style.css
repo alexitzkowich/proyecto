@@ -1,7 +1,8 @@
 /* Imports - Tipografía */
 @font-face {
-    font-family: "AkzidenzGrotesk";
-    src: url("https://res.cloudinary.com/dxhqrq4hc/raw/upload/v1649443896/AkzidenzGrotesk-Bold_a2qjyz.woff"), format("woff");
+  font-family: "AkzidenzGrotesk";
+  src: url("https://res.cloudinary.com/dxhqrq4hc/raw/upload/v1649443896/AkzidenzGrotesk-Bold_a2qjyz.woff"),
+    format("woff");
 }
 /* Reset */
 *,
@@ -59,7 +60,7 @@ picture {
   --black: #000000;
   --white: #ffffff;
   /* 2. Tipografía */
-  --font-sans: 'AkzidenzGrotesk';
+  --font-sans: "AkzidenzGrotesk";
   --font-size-1: 1rem;
   --font-size-2: 1.1rem;
   --font-size-3: 1.25rem;
@@ -79,4 +80,52 @@ body {
   font-family: var(--font-sans);
   background-color: var(--white);
   color: var(--black);
+}
+/* Home */
+.home {
+  background-color: rgb(136, 160, 180);
+  height: 100vh;
+  display: flex;
+}
+/* Nav */
+.nav {
+  width: 200px;
+}
+.nav ul {
+  background-color: aqua;
+}
+.nav ul li {
+  border: 2px solid black;
+}
+/* Main */
+.main {
+  border: 3px solid black;
+  flex: 1;
+}
+/* Destacados */
+.destacados h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.destacados div {
+  background: blue;
+  display: flex;
+  justify-content: space-around;
+  padding-block: 30px;
+  gap: 20px;
+}
+/* .destacados img {
+} */
+/* Galeria */
+.galeria {
+  background: green;
+  padding-block: 30px;
+  justify-content: space-around;
+  display: flex;
+}
+.galeria h2 {
+  order: 1;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: center;
 }
