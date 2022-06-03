@@ -1,7 +1,7 @@
 /* Imports - Tipografía */
 @font-face {
   font-family: "AkzidenzGrotesk";
-  src: url("https://res.cloudinary.com/dxhqrq4hc/raw/upload/v1649443896/AkzidenzGrotesk-Bold_a2qjyz.woff"),
+  src: url("https://res.cloudinary.com/dxhqrq4hc/raw/upload/v1649443896/AkzidenzGrotesk-Bold_a2qjyz.woff")
     format("woff");
 }
 /* Reset */
@@ -26,6 +26,7 @@ picture {
 body {
   line-height: 1.5;
   min-height: 100vh;
+
 }
 
 ul {
@@ -43,11 +44,11 @@ picture {
   display: block;
 }
 a {
-  color: rgb(161, 127, 255);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 a:hover {
-  color: rgb(255, 127, 217);
+  color: rgb(255, 0, 0);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -57,7 +58,7 @@ a:hover {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behaviour: auto !important;
+    scroll-behavior: auto !important;
   }
 }
 
@@ -90,16 +91,21 @@ body {
 }
 /* Home */
 .home {
-  background-color: rgb(136, 160, 180);
-  height: 100vh;
-  display: flex;
+  background-color: rgb(255, 255, 255);
+  width: calc(100vw - 210px);
+  margin-left: auto;
+  display: grid;
 }
+
 /* Nav */
 .nav {
+  position: fixed;
+  top: 0;
   width: 200px;
 }
 .nav ul {
-  background-color: aqua;
+  top: 0;
+  background-color: rgb(255, 255, 255);
 }
 .nav ul li {
   border: 2px solid black;
@@ -107,6 +113,7 @@ body {
 /* Main */
 .main {
   border: 3px solid black;
+  border-left: 0;
   flex: 1;
 }
 /* Destacados */
@@ -115,7 +122,7 @@ body {
   text-align: center;
 }
 .destacados div {
-  background: blue;
+  background: rgb(255, 255, 255);
   display: flex;
   justify-content: space-around;
   padding-block: 30px;
@@ -127,25 +134,38 @@ max-width: 100%;
 }
 /* Galeria */
 .galeria {
-  background: green;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  background: rgb(255, 255, 255);
   padding-block: 30px;
-  justify-content: space-around;
-  display: flex;
+  /* border: 2px solid black; */
+  /* border-left: 2px solid;
+  border-right: 2px solid;
+  border-top: 2px solid; */
 }
-.galeria h2 {
+.galeria img {
+  border: 2px solid black;
+}
+/* .galeria h2 {
   order: 1;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   text-align: center;
+} */
+.footer {
+  background-color: rgb(255, 255, 255);
+  width: calc(100vw - 210px);
+  margin-left: auto;
+}
+.footer div:first-of-type {
+  background-color: rgb(255, 255, 255);
+  padding-top: 20px;
+  text-align: center;
 }
 
-.contacto {
-padding-top: 5cm;
-text-align: center;
-}
-
-.contacto-av {
-  justify-content: space-around;
+.footer div:last-of-type {
   display: flex;
-
+  padding-block: 50px;
+ justify-content: space-around;
 }
