@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <!-- https://06e3-2806-2f0-9140-32b0-e832-f401-c50b-4fd9.ngrok.io/ -->
   <nav class="nav">
     <ul>
       <a href="./about.html">
@@ -64,18 +65,16 @@
     </main>
   </div>
   <div class="footer">
-    <div>
-      <h2>CONTACTO</h2>
-      <h1>ENTRA A MI NEWSLATTER</h1>
-      <ul>
-        <li>NOMBRE</li>
-        <button></button>
-        <li>E-MAIL</li>
-        <button></button>
-        <li>MENSAJE</li>
-        <button></button>
-      </ul>
-      <button></button>
+    <div class="contacto">
+      <h3>CONTACTO</h3>
+      <p>ENTRA A MI NEWSLATTER</p>
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea -->
+      <form action="post">
+        <input type="text" placeholder="Nombre">
+        <input type="text" placeholder="E-mail">
+        <textarea name="textarea" rows="5" cols="30" minlength="10" maxlength="20">Mensaje</textarea>
+        <button type="submit">Contacto</button>
+      </form>
     </div>
     <div>
       <h2>ENTRA A MI NEWSLATTER</h2>
@@ -83,5 +82,6 @@
     </div>
   </div>
 </body>
+<!-- https://www.netlify.com/ -->
 
 </html>

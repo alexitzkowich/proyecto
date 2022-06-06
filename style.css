@@ -169,3 +169,57 @@ max-width: 100%;
   padding-block: 50px;
  justify-content: space-around;
 }
+
+.footer .contacto {
+  margin-top: 40px;
+  padding: 50px 0;
+}
+.footer .contacto h3 {
+  font-size: 16px;
+}
+.footer .contacto p {
+  font-size: 32px;
+  line-height: 2;
+}
+.footer .contacto form {
+  display: grid;
+  max-width: 60%;
+  margin: auto;
+  margin-top: 12px;
+  gap: 1rem;
+}
+.footer .contacto form input,
+.footer .contacto form textarea {
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px rgb(67, 67, 67);
+  border-radius: 4px;
+  padding-inline: 12px;
+  padding-block: 10px;
+  color:rgb(67, 67, 67);
+}
+.footer .contacto form textarea {
+  padding: 1rem;
+
+}
+
+.footer .contacto form button {
+  max-width: max-content;
+  margin-inline: auto;
+  background-color: rgba(51, 51, 51, 0.05);
+  border: 1px solid rgb(88, 88, 88);
+  border-radius: 8px;
+  box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  color: #333333;
+  margin-top: 12px;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
