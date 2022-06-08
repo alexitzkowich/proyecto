@@ -1,9 +1,9 @@
 /* Imports - Tipografía */
 @font-face {
   font-family: "AkzidenzGrotesk";
-  src: url("https://res.cloudinary.com/dxhqrq4hc/raw/upload/v1649443896/AkzidenzGrotesk-Bold_a2qjyz.woff")
-    format("woff");
+  src: url("https://res.cloudinary.com/dxhqrq4hc/raw/upload/v1649443896/AkzidenzGrotesk-Bold_a2qjyz.woff") format("woff");
 }
+
 /* Reset */
 *,
 *::before,
@@ -43,15 +43,18 @@ picture {
   max-width: 100%;
   display: block;
 }
+
 a {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
+
 a:hover {
   color: rgb(255, 0, 0);
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -89,6 +92,7 @@ body {
   background-color: var(--white);
   color: var(--black);
 }
+
 /* Home */
 .home {
   background-color: rgb(255, 255, 255);
@@ -101,26 +105,34 @@ body {
 .nav {
   position: fixed;
   top: 0;
-  width: 200px;
+  margin-left: 1rem;
+  width: 180px;
 }
+
 .nav ul {
   top: 0;
   background-color: rgb(255, 255, 255);
 }
+
 .nav ul li {
   border: 2px solid black;
+  margin-bottom: 0.9rem;
+  box-shadow: -2px 2px 1px 2px rgb(0 0 0);
 }
+
 /* Main */
 .main {
   border: 3px solid black;
   border-left: 0;
   flex: 1;
 }
+
 /* Destacados */
 .destacados h2 {
   font-size: 30px;
   text-align: center;
 }
+
 .destacados div {
   background: rgb(255, 255, 255);
   display: flex;
@@ -128,10 +140,12 @@ body {
   padding-block: 30px;
   gap: 20px;
 }
+
 .destacados img {
-border: 2px solid;
-max-width: 100%;
+  border: 2px solid;
+  max-width: 100%;
 }
+
 /* Galeria */
 .galeria {
   display: grid;
@@ -144,9 +158,11 @@ max-width: 100%;
   border-right: 2px solid;
   border-top: 2px solid; */
 }
+
 .galeria img {
   border: 2px solid black;
 }
+
 /* .galeria h2 {
   order: 1;
   writing-mode: vertical-lr;
@@ -158,6 +174,7 @@ max-width: 100%;
   width: calc(100vw - 210px);
   margin-left: auto;
 }
+
 .footer div:first-of-type {
   background-color: rgb(255, 255, 255);
   padding-top: 20px;
@@ -167,20 +184,23 @@ max-width: 100%;
 .footer div:last-of-type {
   display: flex;
   padding-block: 50px;
- justify-content: space-around;
+  justify-content: space-around;
 }
 
 .footer .contacto {
   margin-top: 40px;
   padding: 50px 0;
 }
+
 .footer .contacto h3 {
   font-size: 16px;
 }
+
 .footer .contacto p {
   font-size: 32px;
   line-height: 2;
 }
+
 .footer .contacto form {
   display: grid;
   max-width: 60%;
@@ -188,38 +208,66 @@ max-width: 100%;
   margin-top: 12px;
   gap: 1rem;
 }
+
 .footer .contacto form input,
 .footer .contacto form textarea {
-  border: 1px solid #ccc;
-  box-shadow: inset 0 1px 3px rgb(67, 67, 67);
-  border-radius: 4px;
-  padding-inline: 12px;
-  padding-block: 10px;
-  color:rgb(67, 67, 67);
+      border: 2px solid #000;
+        box-shadow: inset 0 1px 3px rgb(0, 0, 0);
+        border-radius: 0;
+        padding-inline: 12px;
+        padding-block: 10px;
+        color: rgb(0 0 0);
+        font-family: "AkzidenzGrotesk";
+        text-transform: uppercase;
 }
+
 .footer .contacto form textarea {
   padding: 1rem;
 
 }
 
 .footer .contacto form button {
-  max-width: max-content;
-  margin-inline: auto;
-  background-color: rgba(51, 51, 51, 0.05);
-  border: 1px solid rgb(88, 88, 88);
-  border-radius: 8px;
-  box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.75);
-  font-size: 14px;
-  color: #333333;
-  margin-top: 12px;
-  padding: 10px 12px;
+      max-width: max-content;
+        margin-inline: auto;
+        background-color: rgba(51, 51, 51, 0.05);
+        border: 2px solid rgb(0 0 0);
+        box-shadow: -2px 2px 1px 2px rgb(0 0 0);
+        -moz-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.75);
+        font-size: 14px;
+        color: #000000;
+        margin-top: 12px;
+        padding: 10px 12px;
+        text-align: center;
+        transition: all 200ms;
+        vertical-align: baseline;
+        white-space: nowrap;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        font-family: "AkzidenzGrotesk";
+        text-transform: uppercase;
+
+}
+
+.logo{
+  width: 60%;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+
+.heder-titulo{
+  color: #000000;
+  font-size: 2.5em;
   text-align: center;
-  transition: all 200ms;
-  vertical-align: baseline;
-  white-space: nowrap;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  font-weight: 400;
+}
+
+.footer-logo {
+  width: 18%;
+    margin: auto;
+    margin-left: -0.2rem;
+}
+
+::placeholder{
+  color: #000;
 }
