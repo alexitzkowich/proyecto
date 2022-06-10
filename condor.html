@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Alexandro</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  .proyectos {
+    display: grid;
+    place-content: center;
+  }
+
+  .carrusel {
+    position: relative;
+    overflow: hidden;
+    margin-left: 180px;
+
+    /* width: 100%; */
+  }
+
+  .carrusel .open:checked+figure {
+    position: static;
+    opacity: 100;
+  }
+
+  .carrusel figure {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+  }
+
+  .carrusel figure img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .carrusel-nav {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translate(0, -50%);
+    transition: opacity 0.4s linear;
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+  }
+
+  .carrusel-nav.anterior {
+    left: 0.5ch;
+  }
+
+  .carrusel-nav.siguiente {
+    right: 0.5ch;
+  }
+
+  .carrusel-nav:hover {
+    opacity: 0.8;
+  }
+
+  #uno:checked~.uno,
+  #dos:checked~.dos,
+  #tres:checked~.tres {
+    display: block;
+  }
+
+  .carrusel-dots {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .carrusel-dots li {
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+
+  .dot {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 2rem;
+    transition: opacity 0.4s linear;
+  }
+
+  .dot:hover {
+    opacity: 0.8;
+  }
+
+  #uno:checked~.uno~.carrusel-dots li:nth-child(1) .dot,
+  #dos:checked~.dos~.carrusel-dots li:nth-child(2) .dot,
+  #tres:checked~.tres~.carrusel-dots li:nth-child(3) .dot {
+    color: #428bca;
+  }
+</style>
+
+<body class="proyectos">
+  <!-- https://06e3-2806-2f0-9140-32b0-e832-f401-c50b-4fd9.ngrok.io/ -->
+  <nav class="nav">
+    <ul>
+      <p class="heder-titulo">TED-TEX</p>
+      <a href="./diseno.html">
+        <img class="logo"
+          src="https://res.cloudinary.com/dxhqrq4hc/image/upload/v1654637176/Screen_Shot_2022-05-20_at_13.19.47_iifklj.png"
+          alt="TED-TEX">
+      </a>
+      <a href="./about.html">
+        <li>TED-TEX</li>
+      </a>
+      <a href="./diseno.html">
+        <li>DISEÑO</li>
+      </a>
+      <a href="about.html">
+        <li>ABOUT</li>
+      </a>
+      <a href="contacto.html">
+        <li>CONTACTO</li>
+      </a>
+    </ul>
+  </nav>
+  <div class="home">
+    <div class="carrusel">
+      <input class="open" type="radio" id="uno" name="carrusel" aria-hidden="true" hidden="" checked="checked">
+      <figure>
+        <img
+          src="https://res.cloudinary.com/dxhqrq4hc/image/upload/v1654883167/Screen_Shot_2022-06-10_at_12.44.03_igi7tm.jpg">
+        <!-- <figcaption>
+          Hola soy el figcaption
+        </figcaption> -->
+      </figure>
+      <input class="open" type="radio" id="dos" name="carrusel" aria-hidden="true" hidden="">
+      <figure>
+        <img
+          src="https://res.cloudinary.com/dxhqrq4hc/image/upload/v1654883167/Screen_Shot_2022-06-10_at_12.44.20_m6smcp.jpg">
+      </figure>
+      <input class="open" type="radio" id="tres" name="carrusel" aria-hidden="true" hidden="">
+      <figure>
+        <img
+          src="https://res.cloudinary.com/dxhqrq4hc/image/upload/v1654883167/Screen_Shot_2022-06-10_at_12.44.35_flbwoi.jpg">
+      </figure>
+
+      <label for="tres" class="carrusel-nav anterior uno">‹</label>
+      <label for="dos" class="carrusel-nav siguiente uno">›</label>
+      <label for="uno" class="carrusel-nav anterior dos">‹</label>
+      <label for="tres" class="carrusel-nav siguiente dos">›</label>
+      <label for="dos" class="carrusel-nav anterior tres">‹</label>
+      <label for="uno" class="carrusel-nav siguiente tres">›</label>
+
+      <ol class="carrusel-dots">
+        <li>
+          <label for="uno" class="dot">•</label>
+        </li>
+        <li>
+          <label for="dos" class="dot">•</label>
+        </li>
+        <li>
+          <label for="tres" class="dot">•</label>
+        </li>
+        <li>
+          <label for="cuatro" class="dot">•</label>
+        </li>
+      </ol>
+    </div>
+    <!-- <main class="main">
+      <div class="destacados">
+        <h2>LO MÁS NUEVO</h2>
+        <div>
+          <a href="./rarezas-comestibles.html">
+            <img src="https://res.cloudinary.com/dxhqrq4hc/image/upload/v1654269831/Artboard_1_copy_7_ohaecq.jpg"
+              alt="">
+
+          </a>
+          <a href=""><img
+              src="https://res.cloudinary.com/dxhqrq4hc/image/upload/v1654269830/Artboard_1_copy_8_wqxntv.jpg"
+              alt=""></a>
+          <a href="todo.html"><img
+              src="https://res.cloudinary.com/dxhqrq4hc/image/upload/v1654269830/Artboard_1_copy_6_sgto6h.jpg"
+              alt=""></a>
+
+        </div>
+      </div>
+
+      <div class="galeria">
+        <img src="https://res.cloudinary.com/dxhqrq4hc/image/upload/v1654269832/Artboard_1_copy_4_dw4jiq.jpg" alt="">
+        <img src="https://res.cloudinary.com/dxhqrq4hc/image/upload/v1654269830/Artboard_1_copy_2_kfi7p9.jpg" alt="">
+        <img src="https://res.cloudinary.com/dxhqrq4hc/image/upload/v1654269831/Artboard_1_copy_5_mn47ao.jpg" alt="">
+
+      </div>
+      <div class="galeria">
+        <img src="https://res.cloudinary.com/dxhqrq4hc/image/upload/v1654269831/Artboard_1_copy_o5zsnv.jpg" alt="">
+        <img src="https://res.cloudinary.com/dxhqrq4hc/image/upload/v1654269829/Artboard_1_copy_3_clwfqj.jpg" alt="">
+        <img src="https://res.cloudinary.com/dxhqrq4hc/image/upload/v1654269709/Artboard_1-min_cs8yxi.jpg" alt="">
+
+      </div>
+    </main> -->
+  </div>
+  <!-- <div class="footer">
+    <div class="contacto">
+      <h3>CONTACTO</h3>
+      <p>ENTRA A MI NEWSLATTER</p>
+      <form action="post">
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="E-mail">
+        <textarea name="textarea" rows="5" cols="30" minlength="10" maxlength="20">Mensaje</textarea>
+        <button type="submit">Contacto</button>
+      </form>
+    </div>
+    <div>
+      <h2>ENTRA A MI NEWSLATTER</h2>
+      <h2>INSTAGRAM FACEBOOK</h2>
+    </div>
+  </div> -->
+  <!-- <footer>
+    <img class="footer-logo"
+      src="https://res.cloudinary.com/dxhqrq4hc/image/upload/v1654639413/Screen_Shot_2022-05-20_at_13.21.33_uxoksa.png"
+      alt="">
+  </footer> -->
+</body>
+
+</html>
